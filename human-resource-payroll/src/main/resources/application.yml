@@ -1,0 +1,9 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: payroll-worker
+    
+human-resource-worker:
+  host: http://localhost:8001
