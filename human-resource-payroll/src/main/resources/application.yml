@@ -6,4 +6,5 @@ spring:
     name: payroll-worker
     
 human-resource-worker:
-  host: http://localhost:8001
+  ribbon:
+    listOfServers: localhost:8001, localhost:8002
