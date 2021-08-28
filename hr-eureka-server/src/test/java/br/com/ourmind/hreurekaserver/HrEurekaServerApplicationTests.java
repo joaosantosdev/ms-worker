@@ -1,10 +1,10 @@
-package br.com.ourmind.humanresourceeurekaserver;
+package br.com.ourmind.hreurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HumanResourceEurekaServerApplicationTests {
+class HrEurekaServerApplicationTests {
 
 	@Test
 	void contextLoads() {

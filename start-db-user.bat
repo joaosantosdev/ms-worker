@@ -1,0 +1,1 @@
+docker run -p 5433:5432 --name hr-user-pg12 --network hr-microservice-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_user -it -d postgres:12-alpine

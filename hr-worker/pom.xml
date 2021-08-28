@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.ourmind</groupId>
-	<artifactId>human-resource-worker</artifactId>
+	<artifactId>hr-worker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>human-resource-worker</name>
+	<name>hr-worker</name>
 	<description>Microservice Worker</description>
 	<properties>
 		<java.version>11</java.version>

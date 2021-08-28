@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.ourmind</groupId>
-	<artifactId>human-resource-eureka-server</artifactId>
+	<artifactId>hr-eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>human-resource-eureka-server</name>
+	<name>hr-eureka-server</name>
 	<description>Microservice Eureka Server</description>
 	<properties>
 		<java.version>11</java.version>

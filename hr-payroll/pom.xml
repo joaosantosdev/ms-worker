@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.ourmind</groupId>
-	<artifactId>human-resource-payroll</artifactId>
+	<artifactId>hr-payroll</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>payroll-worker</name>
+	<name>hr-payroll</name>
 	<description>Microservice Payroll</description>
 	<properties>
 		<java.version>11</java.version>

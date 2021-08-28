@@ -10,10 +10,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication
-public class HumanResourcePayrollApplication {
+public class HrPayrollApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HumanResourcePayrollApplication.class, args);
+		SpringApplication.run(HrPayrollApplication.class, args);
 	}
 
 }

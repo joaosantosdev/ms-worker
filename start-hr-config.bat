@@ -1,1 +1,0 @@
-docker run -p 8888:8888 --name hr-config-server --network hr-microservice-net -e GITHUB_USER=joaosantosdev -e GITHUB_PASSWORD=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 -it -d hr-config-server:v1
