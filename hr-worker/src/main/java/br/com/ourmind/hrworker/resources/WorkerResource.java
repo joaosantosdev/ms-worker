@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +22,12 @@ public class WorkerResource {
 
 	private static Logger log = LoggerFactory.getLogger(WorkerResource.class);
 
+	@Value("${test.config}")
+	private String config;
+	
 	@Autowired
 	private Environment env;
-	
+
 	@Autowired
 	private WorkerRepository workerRepository;
 
@@ -36,6 +40,12 @@ public class WorkerResource {
 	public ResponseEntity<Worker> findById(@PathVariable Long id) throws Exception {
 		log.info("PORT = " + this.env.getProperty("local.server.port"));
 		return ResponseEntity.ok(this.workerRepository.findById(id).orElseThrow(() -> new Exception("Not Found")));
+	}
+
+	@GetMapping(value = "/configs")
+	public ResponseEntity<Void> getConfigs() {
+		log.info("CONFIG: "+ this.config);
+		return ResponseEntity.noContent().build();
 	}
 
 }
