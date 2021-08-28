@@ -1,11 +1,15 @@
+server:
+  port: 8888
+  
 spring:
   application:
     name: hr-config-server
   cloud:
-    config: 
+    config:
       server:
         git:
           default-label: main
           uri: https://github.com/joaosantosdev/microservice-config-server
-server:
-  port: 8888
+          username: ${GITHUB_USER}
+          password: ${GITHUB_PASSWORD}
+
