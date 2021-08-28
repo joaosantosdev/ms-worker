@@ -3,8 +3,8 @@ server:
 
 spring:
   application:
-    name: payroll-worker
+    name: hr-payroll
     
-human-resource-worker:
+hr-worker:
   ribbon:
     listOfServers: localhost:8001, localhost:8002

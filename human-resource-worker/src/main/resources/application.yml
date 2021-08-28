@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: human-resource-worker  datasource:    url: jdbc:h2:mem:testdb
+    name: hr-worker  datasource:    url: jdbc:h2:mem:testdb
     username: sa
     password: 
   h2:    console:      enabled: true
